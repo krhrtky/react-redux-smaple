@@ -1,5 +1,3 @@
-import * as creators from '../actionCreator'
-
 type ReturnTypes<T> = {
   [K in keyof T]: T[K] extends (...args: any[]) => any
       ? ReturnType<T[K]>
